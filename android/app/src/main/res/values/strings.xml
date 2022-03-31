@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SurveyNotifications</string>
+    <string name="title_activity_main">SurveyNotifications</string>
+    <string name="package_name">com.offlinesurveyproject.offlinesurvey</string>
+    <string name="custom_url_scheme">com.offlinesurveyproject.offlinesurvey</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "440275022255",
+    "project_id": "offlinesurvey-b4585",
+    "storage_bucket": "offlinesurvey-b4585.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440275022255:android:f69534e94b7f320b383f5a",
+        "android_client_info": {
+          "package_name": "com.offlinesurveyproject.offlinesurvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440275022255-7t4gtc0ddn5t21m0elkr902e1qqcesi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.offlinesurveyproject.offlinesurvey",
+            "certificate_hash": "79fde95861e317733aa82971a29f3c0a582172ac"
+          }
+        },
+        {
+          "client_id": "440275022255-kjv7fgddq5i57sg2j2ujj8eaqm8dps65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLP60RGIumKqlTHjPzhO7dXgdJnnDHsH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440275022255-kjv7fgddq5i57sg2j2ujj8eaqm8dps65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

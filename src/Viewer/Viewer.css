@@ -1,0 +1,5 @@
+.sv_header__text {
+  width: 100%;
+  max-width: 100% !important;
+  overflow-x: scroll;
+}

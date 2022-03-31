@@ -1,0 +1,7 @@
+{
+  "name": "SurveyNotifications",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
