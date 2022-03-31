@@ -45,16 +45,17 @@ public class PushNotificationsPlugin extends Plugin {
     public void load() {
         notificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
         firebaseMessagingService = new MessagingService();
+        Log.d("kiran1","called when foreground");
 
         staticBridge = this.bridge;
         if (lastMessage != null) {
+            Log.d("kiran","called when foreground");
             fireNotification(lastMessage);
             lastMessage = null;
         }
 
         notificationChannelManager = new NotificationChannelManager(getActivity(), notificationManager);
     }
-
     @Override
     protected void handleOnNewIntent(Intent data) {
         super.handleOnNewIntent(data);
@@ -211,17 +212,18 @@ public class PushNotificationsPlugin extends Plugin {
     }
 
     public static void sendRemoteMessage(RemoteMessage remoteMessage) {
+        Log.d("messagecalled",remoteMessage.getData().toString());
         PushNotificationsPlugin pushPlugin = PushNotificationsPlugin.getPushNotificationsInstance();
         if (pushPlugin != null) {
             pushPlugin.fireNotification(remoteMessage);
         } else {
             lastMessage = remoteMessage;
+            Log.d("lastmessagecalled",remoteMessage.getData().toString());
+
         }
     }
-
     public void fireNotification(RemoteMessage remoteMessage) {
         JSObject remoteMessageData = new JSObject();
-        Log.d("kiran","called when foreground");
         JSObject data = new JSObject();
         remoteMessageData.put("id", remoteMessage.getMessageId());
         for (String key : remoteMessage.getData().keySet()) {

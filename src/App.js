@@ -33,25 +33,7 @@ function App() {
     await PushNotifications.addListener(
       "pushNotificationReceived",
       (notification) => {
-        LocalNotifications.schedule({
-          notifications: [
-            {
-              title: "Title",
-              body: "Body",
-              id: 1,
-              schedule: { at: new Date(Date.now() + 1000 * 20) },
-              sound: null,
-              attachments: null,
-              actionTypeId: "",
-              extra: null,
-            },
-          ],
-        }).catch((error) => {
-          console.debug(
-            "AppComponent#initializePushNotificationListener notifications denied",
-            error
-          );
-        });
+  
         console.log("Push notification received: ", notification.data);
       }
     );
